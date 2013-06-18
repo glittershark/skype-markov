@@ -1,4 +1,6 @@
-ATTACH DATABASE '/home/smith/.Skype/wildgriffin45/main.db' AS skype;
+-- replace <your_username> and <your_skype_name with
+-- the path to your home folder and your skype name, respectively
+ATTACH DATABASE '/home/<your_username>/.Skype/<your_skype_name>/main.db' AS skype;
 ATTACH DATABASE 'markov.db' AS markov;
 
 -- Create the tables that cache data from Skype {{{
