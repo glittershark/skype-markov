@@ -25,7 +25,7 @@ def get_random_seed_pair(conn):
 
 def generate(username, num_words, db_file="./markov.db"):
   conn = sqlite3.connect(db_file)
-  w1, w2 = get_random_seed_pair
+  w1, w2 = get_random_seed_pair(conn)
 
   gen_words = []
   for i in xrange(num_words):
