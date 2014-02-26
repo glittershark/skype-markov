@@ -51,7 +51,7 @@ class Chainer(object):
           continue
         ## Split the message into words
         words = row['message_body'].split()
-        for triple in triples(words):
+        for triple in self.triples(words):
           ## Test if we already have these stem words
           #c = self.conn.cursor()
           #if len(c.execute("""
@@ -108,7 +108,6 @@ if __name__ == "__main__":
   #args = parser.parse_args()
 
   chn = Chainer()
-  # chn.load_from_skype("/home/smith", "wildgriffin45", do_initial_load=True)
-  for i in xrange(50):
-    print chn.generate(None, 400)
+  #chn.load_from_skype("/home/smith", "wildgriffin45", do_initial_load=True)
+  print chn.generate(None, 400)
 
