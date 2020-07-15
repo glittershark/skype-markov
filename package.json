@@ -2,7 +2,7 @@
   "name": "skypov",
   "dependencies": {
     "pg": "^2.11.1",
-    "lodash": "^2.4.1",
+    "lodash": "^4.17.19",
     "jade": "^1.1.5",
     "express": "^3.4.8"
   }
